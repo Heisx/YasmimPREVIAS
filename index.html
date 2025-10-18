@@ -1,279 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tarot Myasim - Leitura Espiritual</title>
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atendimento Exclusivo 🔥</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body {
-      height: 100%;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #000;
-      color: #ff3333;
-      scroll-behavior: smooth;
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ff004c, #ff7b00, #9b00ff);
+      background-size: 300% 300%;
+      animation: gradientShift 8s ease infinite;
     }
-
-    body { padding: 20px; }
-
-    header {
-      text-align: center;
-      margin-bottom: 30px;
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
-
-    header h1 {
-      font-size: 3rem;
-      color: #ff4d4d;
-      font-family: 'Cinzel', serif;
+    .btn-hot {
+      transition: all 0.3s ease;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
     }
-
-    header p {
-      color: #ff0000;
-      font-style: italic;
-      margin-top: 10px;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    section {
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 12px;
-      padding: 25px 30px;
-      margin-bottom: 40px;
-      box-shadow: 0 0 15px rgba(255, 0, 0, 0.1);
-    }
-
-    section h2 {
-      font-size: 2rem;
-      color: #ff6666;
-      margin-bottom: 12px;
-    }
-
-    section h2::before {
-      content: "🔮 ";
-    }
-
-    section p {
-      font-size: 1.2rem;
-      color: #ff9999;
-      line-height: 1.6;
-    }
-
-    .btn-acao {
-      background: #ff3333;
-      color: white;
-      padding: 14px 28px;
-      border-radius: 30px;
-      font-size: 1.2rem;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s ease;
-      display: inline-block;
-      margin-top: 20px;
-    }
-
-    .btn-acao:hover {
-      background: #ff6600;
-    }
-
-    form label {
-      display: block;
-      margin-top: 15px;
-      color: #ff9999;
-    }
-
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border-radius: 6px;
-      border: none;
-      background-color: #111;
-      color: #fff;
-    }
-
-    form button {
-      margin-top: 20px;
-    }
-
-    .floating-btns {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      z-index: 1000;
-    }
-
-    .floating-btns a {
-      background-color: #ff3333;
-      color: white;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-      transition: background 0.3s ease;
-    }
-
-    .floating-btns a:hover {
-      background-color: #ff6600;
-    }
-
-    .floating-btns img {
-      width: 24px;
-      height: 24px;
-    }
-
-    .modal {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.8);
-      display: none;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
-
-    .modal-content {
-      background: #111;
-      padding: 30px;
-      border-radius: 12px;
-      color: #ffcc66;
-      max-width: 500px;
-      text-align: center;
-      box-shadow: 0 0 20px rgba(255, 204, 102, 0.4);
-    }
-
-    .modal-content h3 {
-      margin-bottom: 20px;
-    }
-
-    .modal-content button {
-      margin-top: 20px;
-      background: #ff3333;
-      border: none;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 20px;
-      cursor: pointer;
-    }
-
-    footer {
-      text-align: center;
-      color: #ff4444cc;
-      padding: 30px 0 10px;
-    }
-
-    @media (max-width: 600px) {
-      header h1 { font-size: 2.2rem; }
-      section h2 { font-size: 1.5rem; }
-      .btn-acao { font-size: 1rem; padding: 12px 24px; }
+    .btn-hot:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
     }
   </style>
 </head>
-<body>
-  <header>
-    <h1>Tarot Myasim</h1>
-    <p>Descubra respostas através da espiritualidade e intuição</p>
-  </header>
+<body class="flex flex-col items-center justify-center min-h-screen text-white p-6">
+  <div class="text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-lg">🔥 Atendimento Exclusivo no Telegram</h1>
+    <p class="text-lg md:text-xl opacity-90 mb-10">Fale direto comigo ou saia das prévias quando quiser.</p>
 
-  <main>
-    <section>
-      <h2>O que é tarot?</h2>
-      <p>O tarô é um baralho composto por 78 cartas usado para autoconhecimento, reflexão e, em alguns casos, adivinhação. Ele é dividido em dois grupos: os Arcanos Maiores e os Arcanos Menores.</p>
-    </section>
+    <!-- Botão para Telegram Pessoal -->
+    <a href="https://t.me/liviamac" target="_blank" class="btn-hot bg-white text-pink-600 font-semibold py-4 px-10 rounded-full text-lg block mb-6">💬 Falar no Telegram</a>
 
-    <section>
-      <h2>Baralho Cigano</h2>
-      <p>O Baralho Cigano é um oráculo formado por 36 cartas com símbolos do cotidiano. É ideal para orientar decisões práticas e emocionais.</p>
-    </section>
+    <!-- Botão para sair do grupo -->
+    <a href="https://t.me/+nfGpY-CZKEI0MmQx" target="_blank" class="btn-hot bg-transparent border-2 border-white py-4 px-10 rounded-full text-lg font-medium hover:bg-white hover:text-pink-600 transition">🚪 Sair das Prévias</a>
 
-    <section>
-      <h2>Por que escolher o Tarot Myasim?</h2>
-      <p>🌟 Atendimento humanizado e empático<br>
-         🌙 Especialização em Baralho Cigano e Tarot tradicional<br>
-         🔮 Mais de 5 anos de experiência em leituras espirituais<br>
-         📱 Consultas online seguras e acessíveis</p>
-    </section>
-
-    <section>
-      <h2>Depoimentos</h2>
-      <p>✨ “A leitura foi certeira e me deu clareza num momento difícil.” – <strong>Ana C.</strong></p>
-      <p>🌟 “Myasim é uma guia espiritual incrível, recomendo de olhos fechados.” – <strong>Rafael T.</strong></p>
-      <p>🌙 "amei sua tiragem! acertou tudo."–<strong>Natalia F.</strong></p>
-    </section>
-
-    <section>
-      <h2>Perguntas Frequentes</h2>
-      <p><strong>Como é feita a consulta?</strong><br>
-      Por WhatsApp, com total descrição e respeito.</p>
-
-      <p><strong>Quanto tempo dura a leitura?</strong><br>
-      Em média 30 a 60 minutos, dependendo da consulta.</p>
-
-      <p><strong>É necessário acreditar em espiritualidade?</strong><br>
-      Não! Basta estar aberto a ouvir e refletir.</p>
-
-      <p><strong>Qual o valor das Perguntas?</strong><br>
-        Acesse o instagram e olhe nossa tabela de valores</p>
-
-    </section>
-
-    <section style="text-align: center;">
-      <h2>Agende sua leitura agora</h2>
-      <a href="https://wa.me/5562981798511" class="btn-acao">Falar com Myasim no WhatsApp</a>
-    </section>
-  </main>
-
-  <footer>
-    <div>&copy; 2025 Tarot Myasim — Conectando você ao seu eu interior/ <a href="https://instagram.com/Myasim.tarot" style="color:#ff9999">Instagram</a></div>  </footer>
-    
-    <footer><p><strong>Desenvolvido por Heitor/</strong></p><a href="https://instagram.com/heitor_devlopes" style="color:#ff9999">Instagram</a></footer>
-
-
-  <div class="floating-btns">
-    <a href="https://wa.me/5562981798511" target="_blank" title="WhatsApp">
-      <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
-    </a>
-    <a href="https://instagram.com/Myasim.tarot" target="_blank" title="Instagram">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-    </a>
+    <p class="mt-12 text-sm opacity-70">© 2025 • LIVIA • Todos os direitos reservados</p>
   </div>
-
-  <div class="modal" id="modal">
-    <div class="modal-content">
-      <h3>Bem-vindo ao Tarot Myasim 🌙</h3>
-      <button onclick="document.getElementById('modal').style.display='none'">Fechar</button>
-    </div>
-  </div>
-
-  <script>
-    window.onload = () => {
-      setTimeout(() => {
-        document.getElementById('modal').style.display = 'flex';
-      }, 3000);
-    };
-  </script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script>
-    ScrollReveal().reveal('section', {
-      delay: 200,
-      distance: '50px',
-      origin: 'bottom',
-      duration: 800,
-      easing: 'ease-in-out',
-      reset: false
-    });
-  </script>
 </body>
 </html>
+
